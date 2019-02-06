@@ -1,0 +1,11 @@
+body {
+     background-color: #2e294e; /* space cadet */
+    color: #debac0; /* cameo pink */
+}
+
+
+.container {
+    max-width: 950px;
+    border: solid silver 2px;
+    margin: 0 auto;
+}
