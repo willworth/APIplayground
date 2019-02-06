@@ -3,9 +3,17 @@ body {
     color: #debac0; /* cameo pink */
 }
 
+h1 {
+    margin: 20px auto;
+}
 
 .container {
     max-width: 950px;
     border: solid silver 2px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.coinform {
     margin: 0 auto;
 }
