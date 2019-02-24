@@ -1,0 +1,43 @@
+<%- include('./includes/head.ejs') %>
+
+<body>
+
+    <main>
+        <div class="container">
+            <h1>This is a bitcoin api tester</h1>
+            <form class="coinform" action="/" method="POST">
+                <select name="crypto">
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="LTC">Litecoin</option>
+                </select>
+
+                <select name="fiat">
+                    <option value="USD">US Dollars</option>
+                    <option value="GBP">Pounds Sterling</option>
+                    <option value="EUR">Euros</option>
+
+                </select>
+                <button type="submit">Check</button>
+            </form>
+        </div>
+
+
+
+    </main>
+
+    <%- include('./includes/footer.ejs') %>
+
+
+
+
+
+    <!-- 
+
+    <% if(typeof exchange != 'undefined'){ %> 
+        <div  role="alert">
+          <%= exchange.msg %>
+          
+        </div>
+        <% } %>
+         -->

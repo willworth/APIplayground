@@ -2,9 +2,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 const request = require ("request");
-
+const routes = require('./routes/routes');
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
+
+
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 
 app.use(express.static(__dirname + '/public'));
 ///////////ROUTES/////////
@@ -36,15 +40,13 @@ app.post("/", function(req, res){
 });
 
 
+app.use('/', require('./routes/routes.js'));
 
 
-app.get("/", function(req, res){
-    res.sendFile(__dirname + "/index.html");
-});
 
 
 app.listen(3000, function(){
-    console.log('app running on port 3000!');
+    console.log('app running on port 3000');
     
 });
 

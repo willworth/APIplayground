@@ -7,6 +7,10 @@ h1 {
     margin: 20px auto;
 }
 
+a {
+    color: gold;
+    text-decoration: none;
+}
 .container {
     max-width: 950px;
     border: solid silver 2px;
@@ -17,3 +21,27 @@ h1 {
 .coinform {
     margin: 0 auto;
 }
+
+
+
+#footer {
+    color: wheat;
+    border-top: 2px solid grey;
+  border-top-width: thin;
+    background-color: black;
+    margin: 0;
+    width: 100%;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:5vh;
+    text-align: right;
+    
+  }
+
+#footer > p {
+    margin: 5px;
+    position: relative;
+    right:30px;
+    padding: 10px;
+  }
