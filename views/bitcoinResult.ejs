@@ -4,21 +4,17 @@
 
     <main>
         <div class="container">
-            <h1>This is a bitcoin api tester RESULT PAGE</h1>
-            <div class="bitcoinResultContainer">
+            <h1>Here are the bitcoin exchange results...</h1>
+            <h3><em> If only you'd known earlier!</em></h3>
+
+            <p>This data correct (more or less!) as of: <%= `${currentDate}` %></p>
+            <h3>The current price of <%= `${crypto}` %> is: <%= `${price}` %> in <%= `${fiat}` %>.</h3>
 
 
+            <p>Calculate another exchange <a href="/bitcoin">here</a>, go back to the <a href="/">homepage</a>, </br>
+                or read about someone who knows <a href="https://en.wikipedia.org/wiki/Warren_Buffett">about
+                    investing</a>.</p>
 
-                <p> this is crypto <%= `${crypto}` %></p>
-                <p> this is fiat <%= `${fiat}` %></p>
-                <p> this is price <%= `${price}` %></p>
-                <p> this is <%= `${pageTitle}` %></p>
-
-
-
-
-
-            </div>
         </div>
 
 
